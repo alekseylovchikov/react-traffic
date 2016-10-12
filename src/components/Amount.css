@@ -1,0 +1,16 @@
+.amount {
+    background-color: #fbfbfb;
+    padding: 18px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.amount-title {
+    font-size: 20px;
+}
+
+.amount-sum {
+    color: #7986cb;
+    font-size: 46px;
+    font-weight: 300;
+}

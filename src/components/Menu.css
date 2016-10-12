@@ -1,0 +1,41 @@
+.menu {
+    position: fixed;
+    width: 218px;
+    height: 100%;
+    padding-top: 50px;
+    
+    -webkit-box-shadow: 3px 0px 10px -3px rgba(179,179,179,1);
+    -moz-box-shadow: 3px 0px 10px -3px rgba(179,179,179,1);
+    box-shadow: 3px 0px 10px -3px rgba(179,179,179,1);
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 22px;
+}
+
+.menu ul li {
+    padding: 17px;
+    cursor: pointer;
+}
+
+.menu ul li:first-child {
+    background-color: #00acc1;
+    color: #fff;
+}
+
+.menu-count {
+    float: right;
+}
+
+.menu-num {
+    background-color: #fff;
+    padding: 5px;
+    color: #7d89cd;
+    border-radius: 2px;
+} 
+
+.fa-angle-down {
+    float: right;
+    margin-left: 4px;
+}

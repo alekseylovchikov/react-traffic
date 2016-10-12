@@ -1,0 +1,25 @@
+.filter {
+    margin-top: 35px;
+}
+
+.filter ul {
+    background-color: #fcfcfc;
+    list-style: none;
+}
+
+.filter ul li a {
+    display: block;
+    padding: 10px;
+    color: #cbcbcb;
+    border-bottom: 2px solid transparent;
+    font-size: 13px;
+}
+
+.filter ul li {
+    float: left;
+}
+
+.filter ul li a:hover {
+    color: #575757;
+    border-bottom: 2px solid #7cd3dd;
+}
