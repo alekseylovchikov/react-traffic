@@ -1,12 +1,12 @@
-var React = require('react');
+import React, { Component } from 'react';
 
 // style
 require('./Table.css');
 
 // components
-var Filter = require('./Filter.jsx');
+import Filter from './Filter.jsx';
 
-var Table = React.createClass({
+export default class Table extends Component {
     render() {
         return (
             <div className="table">
@@ -129,7 +129,5 @@ var Table = React.createClass({
                 </table>
             </div>
         );
-    }
-});
-
-module.exports = Table;
+    }    
+}

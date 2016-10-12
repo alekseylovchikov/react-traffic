@@ -1,12 +1,12 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 // components
-var ReactTraffic = require('./components/ReactTraffic.jsx');
-var Menu = require('./components/Menu.jsx');
-var Info = require('./components/Info.jsx');
+import ReactTraffic from './components/ReactTraffic.jsx';
+import Menu from './components/Menu.jsx';
+import Info from './components/Info.jsx';
 
-var App = React.createClass({
+class App extends Component {
     render() {
         return (
             <div>
@@ -16,7 +16,7 @@ var App = React.createClass({
             </div>
         );
     }
-});
+}
 
 ReactDOM.render(
     <App />,

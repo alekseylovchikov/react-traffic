@@ -1,9 +1,9 @@
-var React = require('react');
+import React, { Component } from 'react';
 
 // style
 require('./Menu.css');
 
-var Menu = React.createClass({
+export default class Menu extends Component {
     render() {
         return (
             <div className="menu">
@@ -24,6 +24,4 @@ var Menu = React.createClass({
             </div>
         );
     }
-});
-
-module.exports = Menu;
+}

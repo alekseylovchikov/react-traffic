@@ -1,9 +1,9 @@
-var React = require('react');
+import React, { Component } from 'react';
 
 // style
 require('./Filter.css');
 
-var Filter = React.createClass({
+export default class Filter extends Component {
     render() {
         return (
             <div className="filter">
@@ -23,6 +23,4 @@ var Filter = React.createClass({
             </div>
         );
     }
-});
-
-module.exports = Filter;
+}

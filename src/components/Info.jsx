@@ -1,13 +1,13 @@
-var React = require('react');
+import React, { Component } from 'react';
 
 // components
-var Table = require('./Table.jsx');
-var Amount = require('./Amount.jsx');
+import Table from './Table.jsx';
+import Amount from './Amount.jsx';
 
 // style
 require('./Info.css');
 
-var Info = React.createClass({
+export default class Info extends Component {
     render() {
         return (
             <div className="info">
@@ -30,6 +30,4 @@ var Info = React.createClass({
             </div>
         );
     }
-});
-
-module.exports = Info;
+}

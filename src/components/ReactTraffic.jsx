@@ -1,9 +1,9 @@
-var React = require('react');
+import React, { Component } from 'react';
 
 // style
 require('./ReactTraffic.css');
 
-var ReactTraffic = React.createClass({
+export default class ReactTraffic extends Component {
     render() {
         return (
             <div>
@@ -14,6 +14,4 @@ var ReactTraffic = React.createClass({
             </div>
         );
     }
-});
-
-module.exports = ReactTraffic;
+}
