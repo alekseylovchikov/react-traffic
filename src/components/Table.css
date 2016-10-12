@@ -87,3 +87,25 @@
     color: #b9e9ee;
     font-size: .8rem;
 }
+
+.per-page {
+    text-align: right;
+}
+
+.per-page ul {
+    list-style: none;
+}
+
+.per-page ul li {
+    display: inline-block;
+    padding: 22px;
+    color: #9b9b9b;
+}
+
+.per-page ul li:last-child {
+    padding: 22px 0 22px 22px;
+}
+
+.per-page ul li:last-child a {
+    padding: 0 18px;
+}

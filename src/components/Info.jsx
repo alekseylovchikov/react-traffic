@@ -17,16 +17,6 @@ export default class Info extends Component {
                 <Amount title="Profit" sum="18989" format="sum" />
                 <Amount title="ROI" sum="84" format="percent" />
                 <Table />
-                <div className="per-page">
-                    <ul>
-                        <li>Rows per page: <span>10</span></li>
-                        <li>1-10 of 183</li>
-                        <li>
-                            <a href="#"><i className="fa fa-angle-left" aria-hidden="true"></i></a>
-                            <a href="#"><i className="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         );
     }

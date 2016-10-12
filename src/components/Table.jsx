@@ -127,6 +127,19 @@ export default class Table extends Component {
                         </tr>
                     </tbody>
                 </table>
+                <div className="per-page">
+                    <ul>
+                        <li>Rows per page: <span>10</span></li>
+                        <li>1-10 of 183</li>
+                        <li>
+                            <a href="#"><i className="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a href="#"><i className="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" className="btn-actions btn-deselect">DESELECT ALL</a> <a href="#" className="btn-actions btn-pay"><span>$</span> PAY</a>
+                </div>
             </div>
         );
     }    

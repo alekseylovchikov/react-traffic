@@ -45,6 +45,27 @@ a {
     border-radius: 2px;
 }
 
+.btn-actions {
+    border: 0;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 2px;
+    margin: 12px;
+}
+
+.btn-pay {
+    background-color: #8bc34a;
+}
+
+.btn-deselect {
+    background-color: #9b9b9b;
+}
+
+.btn-pay span {
+    font-weight: 500;
+    margin-right: 6px;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
