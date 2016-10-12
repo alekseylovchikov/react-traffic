@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 
-.menu ul li:first-child {
+.active {
     background-color: #00acc1;
     color: #fff;
 }
@@ -33,7 +33,7 @@
     padding: 5px;
     color: #7d89cd;
     border-radius: 2px;
-} 
+}
 
 .fa-angle-down {
     float: right;

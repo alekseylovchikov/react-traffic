@@ -1,0 +1,16 @@
+.menu-inside {
+    margin-left: 4px;
+}
+
+.menu-inside li {
+    padding: 12px !important;
+    color: #9c9c9c;
+}
+
+.menu-inside li:hover {
+    color: #8894d1;
+}
+
+.menu-inside li i {
+    width: 18px;
+}
