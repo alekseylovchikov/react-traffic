@@ -27,7 +27,7 @@ export default class MenuItem extends Component {
         return (
             <div>
                 <li className="main-item" onClick={this.handleToggleVisible.bind(this)}>
-                    <i className="fa fa-user" aria-hidden="true"></i> {this.props.title} <span className="menu-count">{this.props.count ? <span className="menu-num">{this.props.count}</span> : ''} <i className="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <i className="fa fa-user" aria-hidden="true"></i> {this.props.title} <span className="menu-count">{this.props.count ? <span className="menu-num">{this.props.count}</span> : ''} {this.state.visible ? <i className="fa fa-angle-down" aria-hidden="true"></i> : <i className="fa fa-angle-up" aria-hidden="true"></i>}</span>
                 </li>
                 <SubMenu visible={visible} />
             </div>

@@ -37,13 +37,14 @@
     cursor: pointer;
 }
 
+.main-item {
+    border-bottom: 2px solid #efefef;
+}
+
 .main-item:hover {
     background-color: #00acc1;
     color: #fff;
-}
-
-.main-item {
-    border-bottom: 2px solid #efefef;
+    border-bottom: 2px solid transparent;
 }
 
 .active {
