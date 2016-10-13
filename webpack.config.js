@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-	devtool: debug ? "inline-sourcemap" : null,
+	devtool: 'eval',
 	devServer: {
 		contentBase: "./public"
 	},

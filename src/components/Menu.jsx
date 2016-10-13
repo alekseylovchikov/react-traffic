@@ -7,6 +7,10 @@ require('./Menu.css');
 import MenuItem from './MenuItem.jsx';
 
 export default class Menu extends Component {
+    componentDidMount() {
+           
+    }
+
     render() {
         return (
             <div className="menu">
