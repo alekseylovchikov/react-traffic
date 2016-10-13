@@ -1,0 +1,34 @@
+.btn {
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.btn span {
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+
+
+.btn-actions {
+    padding: 8px 18px;
+    margin: 12px;
+}
+
+
+
+.btn-table {
+    padding: 8px 13px;
+}
+
+
+
+.btn-pay {
+    background-color: #8bc34a;
+}
+
+.btn-deselect {
+    background-color: #9b9b9b;
+}

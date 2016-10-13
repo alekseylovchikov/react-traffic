@@ -9,9 +9,14 @@
     text-align: left;
     color: #898989;
     font-size: 14px;
+    word-break: break-all;
 }
 
 .table tr:nth-child(4) {
+    background-color: #fff0fe;
+}
+
+.checked {
     background-color: #fff0fe;
 }
 

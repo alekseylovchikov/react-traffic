@@ -5,9 +5,20 @@ require('./Table.css');
 
 // components
 import Filter from './Filter.jsx';
+import TableItem from './TableItem.jsx';
+import Button from './ui/Button.jsx';
 
 export default class Table extends Component {
     render() {
+        const person = {
+            id: '123987',
+            name: 'Aleksey Lovchikov',
+            billingAddress: 'aleksey.lovchikov@gmail.com',
+            paidForAllTime: '$3,974',
+            paymentMethod: 'YandexMoney',
+            fitToPay: '$8,987.47',
+            pay: true
+        };
         return (
             <div className="table">
                 <Filter />
@@ -25,6 +36,7 @@ export default class Table extends Component {
                         </tr>
                     </thead>
                     <tbody>
+                        <TableItem {...person} />
                         <tr>
                             <td><input type="checkbox" className="table-checkbox" /></td>
                             <td>1295308</td>
@@ -44,16 +56,6 @@ export default class Table extends Component {
                             <td>superrebecca@gmail.com</td>
                             <td>0</td>
                             <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" className="table-checkbox" /></td>
-                            <td>1295308</td>
-                            <td>Rebecca Henderson</td>
-                            <td>$3,854</td>
-                            <td>PayPal</td>
-                            <td>superrebecca@gmail.com</td>
-                            <td>0</td>
-                            <td><a href="#" className="btn-pay">PAY</a></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" className="table-checkbox" /></td>
@@ -138,7 +140,7 @@ export default class Table extends Component {
                     </ul>
                 </div>
                 <div>
-                    <a href="#" className="btn-actions btn-deselect">DESELECT ALL</a> <a href="#" className="btn-actions btn-pay"><span>$</span> PAY</a>
+                    <Button title="deselect all" classes="btn-actions btn-deselect" /> <Button title="pay" classes="btn-actions btn-pay" symbol="$" />
                 </div>
             </div>
         );
