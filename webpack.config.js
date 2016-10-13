@@ -1,8 +1,12 @@
-var path = require('path');
+var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-	devtool: 'eval',
+	devtool: debug ? "inline-sourcemap" : null,
+	devServer: {
+		contentBase: "./public"
+	},
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:8050',
 		'webpack/hot/only-dev-server',
@@ -49,5 +53,10 @@ module.exports = {
 				loader: 'url-loader?limit=26000&mimetype=image/svg+xml'
 			}
 		]
-	}
+	},
+	plugins: debug ? [] : [
+    	new webpack.optimize.DedupePlugin(),
+    	new webpack.optimize.OccurenceOrderPlugin(),
+    	new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+  	]
 };

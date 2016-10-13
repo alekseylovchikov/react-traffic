@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+.main-item {
+    border-bottom: 2px solid #efefef;
+}
+
 .active {
     background-color: #00acc1;
     color: #fff;
