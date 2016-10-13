@@ -48,7 +48,7 @@ export default class TableItem extends Component {
                 <td>{paidForAllTime}</td>
                 <td>{paymentMethod}</td>
                 <td>{billingAddress}</td>
-                <td>{fitToPay}</td>
+                <td className={pay ? 'fit-to-pay' : ''}>{fitToPay}</td>
                 <td>{pay ? <Button classes="btn-table btn-pay" title="pay" /> : ''}</td>
             </tr>
         );
