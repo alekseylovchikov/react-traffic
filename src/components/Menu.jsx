@@ -12,9 +12,9 @@ export default class Menu extends Component {
             <div className="menu">
                 <ul>
                     <MenuItem title="Publishers" count="12" />
-                    <MenuItem title="My Publishers" count="12" />
-                    <MenuItem title="Publishers" count="12" />
-                    <MenuItem title="Publishers" count="12" />
+                    <MenuItem title="My Publishers" />
+                    <MenuItem title="Publishers" />
+                    <MenuItem title="Publishers" />
                 </ul>
             </div>
         );

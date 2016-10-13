@@ -3,13 +3,8 @@ import React, { Component } from 'react';
 require('./SubMenu.css');
 
 export default class SubMenu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {visible: this.props.visible};
-    }
-
     render() {
-        const { visible } = this.state;
+        const { visible } = this.props;
         if (visible) {
             return (
                 <div>
