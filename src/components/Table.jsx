@@ -67,31 +67,49 @@ export default class Table extends Component {
                     fitToPay: '0',
                     pay: false
                 }
-            ]
+            ],
+            checked: false
         };
     }
 
+    handleToggleAllItems(e) {
+        e.preventDefault();
+        let currentState = this.state.checked;
+        this.setState({
+            checked: !currentState
+        });
+    }
+
     render() {
-        let { persons } = this.state;
+        let { persons, checked } = this.state;
         return (
             <div className="table">
                 <Filter />
                 <table>
                     <thead>
                         <tr>
-                            <th><input type="checkbox" className="table-checkbox" /></th>
-                            <th>ID <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th>Name <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th>Paid for all time <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th>Payment Method <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th>Billing address <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th>Fit to pay <i className="fa fa-filter" aria-hidden="true"></i></th>
-                            <th></th>
+                            <th>
+                                <label onClick={this.handleToggleAllItems.bind(this)}>
+                                    <input
+                                        type="checkbox"
+                                        className="table-checkbox"
+                                        checked={checked}
+                                    />
+                                    <span className={checked ? 'on' : 'off'} />
+                                </label>
+                            </th>
+                            <th>ID <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th>Name <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th>Paid for all time <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th>Payment Method <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th>Billing address <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th>Fit to pay <i className="fa fa-filter" aria-hidden="true" /></th>
+                            <th />
                         </tr>
                     </thead>
                     <tbody>
                         {persons.map((person, count) => {
-                            return <TableItem key={count} {...person} />
+                            return <TableItem key={count} {...person} checked={checked} />
                         })}
                     </tbody>
                 </table>
@@ -100,8 +118,8 @@ export default class Table extends Component {
                         <li>Rows per page: <span>10</span></li>
                         <li>1-10 of 183</li>
                         <li>
-                            <a href="#"><i className="fa fa-angle-left" aria-hidden="true"></i></a>
-                            <a href="#"><i className="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a href="#"><i className="fa fa-angle-left" aria-hidden="true" /></a>
+                            <a href="#"><i className="fa fa-angle-right" aria-hidden="true" /></a>
                         </li>
                     </ul>
                 </div>

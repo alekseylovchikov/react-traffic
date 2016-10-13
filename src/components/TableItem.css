@@ -1,0 +1,31 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+label input[type="checkbox"] + span {
+    font-family: "FontAwesome";
+    font-size: 18px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    width: 1em;
+    line-height: 1;
+    display: inline-block;
+}
+
+label input[type="checkbox"] + .off:before {
+    content: "\f096";
+    color: #c7c7c7;
+}
+
+label input[type="checkbox"] + .on:before {
+    content: "\f14a";
+    color: #00acc1;
+}

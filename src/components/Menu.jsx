@@ -15,6 +15,8 @@ export default class Menu extends Component {
                     <MenuItem title="My Publishers" />
                     <MenuItem title="Publishers" />
                     <MenuItem title="Publishers" />
+                    <MenuItem title="Publishers" />
+                    <MenuItem title="Publishers" />
                 </ul>
             </div>
         );
